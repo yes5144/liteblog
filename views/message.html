@@ -23,7 +23,7 @@
 					<div id="LAY-msg-box">
 						<div class="info-box">
 							<div class="info-item">
-								<img class="info-img" src="../res/static/images/info-img.png" alt="">
+								<img class="info-img" src="/static/images/info-img.png" alt="">
 								<div class="info-text">
 									<p class="title count">
 										<span class="name">一片空白</span>
@@ -44,17 +44,17 @@
 	<script id="LAY-msg-tpl" type="text/html">
 		<div class="info-box">
 			<div class="info-item">
-				<img class="info-img" src="{{ d.avatar }}" alt="">
+				<img class="info-img" src="{{ .Avatar }}" alt="">
 			  <div class="info-text">
 					<p class="title">
-					  <span class="name">{{ d.username }}</span>
+					  <span class="name">{{ .UserName }}</span>
 					  <span class="info-img">
 					  	<i class="layui-icon layui-icon-praise"></i>
-					  	{{ d.praise }}
+					  	{{ .Praise }}
 					 	</span>
 					</p>
 					<p class="info-intr">
-						{{ d.content }}
+						{{ .Content }}
 					</p>
 			  </div>
 			</div>
